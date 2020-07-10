@@ -11,7 +11,9 @@
     <div id="cuerpo">
 	    <header id="encabezado">
             <div class="logo">
-				<img class="imagen" src="../img/logo.png">
+				<img class="imagen" src="../img/logo.png"> 
+				<a class="boton-inicio" href="Inicio.html" > <img class="imagen1" src="../icono/login.png">Iniciar Sesión</a>
+				<a class="boton-inicio" href="register.html"> <img class="imagen1" src="../icono/registro.png">Registrarse</a>
                </div>  	    
         </header>
 
@@ -25,7 +27,7 @@
 				<li><a href="catalogo.html"><img class="imagen1" src="../icono/catalogo.png">Catalogo</a></li>
 				<li><a href="contactos.html"><img class="imagen1" src="../icono/contacto.png">Contacto</a></li>
 				<li><a href="factura.html"><img class="imagen1" src="../icono/factura.png">Factura</a></li>
-				<li><a href="chat.html"><img class="imagen1" src="../icono/avion.jpeg">Chat</a></li>
+				<li><a href="chat.html"><img class="imagen1" src="../icono/avion.png">Chat</a></li>
 		    </ul>
 	    </nav>
 </div>
@@ -35,153 +37,195 @@
 
         <div class="contact-wrapper animated bounceInUp">
             <div class="contact-form">
+				<br>
                 <h3 id="text1">Formulario Contactos</h3>
                 <form action="">
                     <p>
-						<label id="t4">Nombre:</label>  
-					<input type="text" class="field1"  name="nombre" placeholder="digite su nombre">
+						<label id="t4" for="textnombre">Nombre:</label>  
+					<input type="text" class="field1"  name="nombre" placeholder="Digite su nombre"  id="textnombre">
                     </p>
                     <p>
-						<label id="t4">Primer apellido:</label>
-						<input type="text" class="field1"  name="primerapellido" placeholder="digite su primer apellido">
+						<label id="t4"  form="textapellido">Primer apellido:</label>
+						<input type="text" class="field1"  name="primerapellido" placeholder="Digite su primer apellido"  id="textapellido">
 					</p>
 					<p>
-						<label id="t4">Segundo apellido:</label>
-						<input type="text" class="field1"  name="segundoapellido" placeholder="digite su segundo apellido">
+						<label id="t4" form="textapellido2">Segundo apellido:</label>
+						<input type="text" class="field1"  name="segundoapellido" placeholder="Digite su segundo apellido"  id="textapellido2">
 					</p>
 					<p>
-						<label id="t4">Telefono:</label>
-						<input type="number" class="field1"  placeholder="Numero" size="30">
+						<label id="t4" form="texttelefono">Telefono:</label>
+						<input type="number" class="field1"  placeholder="Numero" size="30" id="texttelefono">
 					</p>
 					<div class="box1">
-						<label id="t4">Tipo de documento:</label>
+						<label id="t4" form="texttipdocum">Tipo de documento:</label>
 						<select>
-						  <option>Option 1</option>
-						  <option>Option 2</option>
-						  <option>Option 3</option>
-						  <option>Option 4</option>
-						  <option>Option 5</option>
+						  <option>Seleccionar: </option>
+						  <option id="texttipdocum">CC</option>
+						  <option id="texttipdocum">TI</option>
+						  <option id="texttipdocum">Pasaporte</option>
+						  <option id="texttipdocum">Registro</option>
 						</select>
 					  </div>
 
 
 					<p>
-						<label id="t4">Numero de documento:</label>
-						<input type="number" class="field1" placeholder="Numero" size="30"><br>
+						<label id="t4" form="textdocumento">Numero de documento:</label>
+						<input type="number" class="field1" placeholder="Numero" size="30" id="textdocumento"><br>
 					</p>
 					
 					<p>
-						<label id="t4">Genero:</label>
+						<label id="t4" form="textgenero">Genero:</label>
 						
 					<label id="t4">Femenino 	
-						<input type="radio" class="field1"name="gender">
+						<input type="radio" class="field1"name="gender" id="textgenero">
 						<label id="t4">Masculino
-						<input type="radio" class="field1" name="gender">
+						<input type="radio" class="field1" name="gender" id="textgenero">
 					</p>
 
 					<p>
-						<label id="t4">	Grupo Sanguineo:</label>
+						<label id="t4" form="textgrupo">	Grupo Sanguineo:</label>
 						<label id="t4">O+	
-							<input type="radio" class="field1"name="gender">
+							<input type="radio" class="field1"name="gender" id="textgrupo">
 							<label id="t4">B+
-							<input type="radio" class="field1" name="gender">
+							<input type="radio" class="field1" name="gender" id="textgrupo">
 						
 							</p>
 
 					<p>
 						
-						<label id="t4">	Correo electronico:</label>
-								<input type="email"  class="field1" placeholder="Digite email" size="20"><br>
+						<label id="t4" form="textcorreo">	Correo electronico:</label>
+								<input type="email"  class="field1" placeholder="Digite email" size="20" id="textcorreo"><br>
 
 					</p>
 					
 					<div class="box1">
-						<label id="t4">Ubicacion:</label>
+						<label id="t4" form="textubicacion">Ubicacion:</label>
 						<select>
-							<option>Seleccionar:</option>
-							<option >Barranquilla</option>
-							<option >Baranoa</option>
-							<option>Soledad</option>  
+							<option >Seleccionar:</option>
+							<option id="textubicacion" >Barranquilla</option>
+							<option id="textubicacion" >Baranoa</option>
+							<option id="textubicacion">Soledad</option>  
 						</select>
 					  </div>
 					
 						<div class="box1">
-							<label id="t4">Tipo de documento:</label>
+							<label id="t4" form="texttproblema">Tipo de problema:</label>
 							<select>
-								<option>Seleccionar:  </option>
-								<option>Medicamentos</option>
-								<option>Domicilio</option>
-								<option>Otros</option> 
+								<option >Seleccionar:  </option>
+								<option id="texttproblema">Medicamentos</option>
+								<option id="texttproblema">Domicilio</option>
+								<option id="texttproblema">Otros</option> 
 							</select>
 						  </div>
 						  <div class="box1">
-							<label id="t4">Medicamentos</label>
+							<label id="t4" form="textmedidor">Medidor problema</label>
 							<select>
 								<option>Seleccionar:  </option>
-								<option>Muy grave</option>
-								<option>Grave</option>
-								<option>Leve</option> 
+								<option id="textmedidor">Muy grave</option>
+								<option id="textmedidor">Grave</option>
+								<option id="textmedidor">Leve</option> 
 							</select>
 						  </div>
 <br>
 						<p>
-						<p id="t4">	Mensaje: 
-							<center><textarea type="text" class="field2" placeholder="¿Queja, reclamo o aporte?" rows="10" cols="20"></textarea></center>
+						<p id="t4" form="textmensaje">	Mensaje: 
+							<center><textarea id="textmensaje" type="text" class="field2" placeholder="¿Queja, reclamo o aporte?" rows="10" cols="20"></textarea></center>
 							<p id="t4">
 								Telefonos: 3146196681-321678545
 							
 					 WhatsApp: 3146196681
 							Correo: farmaciaroja@gmail.com
 
-							<center><button class="boton1">Enviar Datos</button><br></center>
+							<center><button class="boton1" id="saveUser">Enviar Datos</button><br></center>
+							
 							</p>
-						
-								
-                </form>
-            </div>
+							
+				</form>
+				
+			
+			
+			</div>
+			
+			
             <div class="contact-info">
+				<br>
 				<h1 id="t4">Asistencia Virtual</h1>
 				<h1 id="t4">Estamos disponibles para:</h1>
 				<p id="t4">
+
 				  <u>Responsabilidad Social</u><br>
-				  <b>Proveedores</b><br>
-				  <u>Necesita ayuda</b><br> 
-				  <u>para preparar dieta</u><br>
-				  <b>personalizada o tienes </b><br> 
-				<b>ue adquirir algun producto</b><br>
-				<b>de farmacia per no sabes donde obtenerlo</b><br>
-				<u>aqui la farmacia</u><br>
-				<u>esta a tu servicio</u><br>
-				  <b>Preguntas Frecuentes</b><br> 
-				  <u>Asesorías y Consultorías</u><br>
-					<b>Mapa del Sitio</b> <br>
-				  <u>Líneas de emergencias</u><br>
+
+				  <b>Proveedores</b><br><br>
+				  <u>Necesita ayuda</b><br><br> 
+				  <u>para preparar dieta</u><br><br>
+				  <b>personalizada o tienes </b><br><br> 
+				<b>ue adquirir algun producto</b><br><br>
+				<b>de farmacia per no sabes donde obtenerlo</b><br><br>
+				<u>aqui la farmacia</u><br><br>
+				<u>esta a tu servicio</u><br><br>
+				  <b>Preguntas Frecuentes</b><br> <br>
+				  <u>Asesorías y Consultorías</u><br><br>
+					<b>Mapa del Sitio</b> <br><br>
+				  <u>Líneas de emergencias</u><br><br>
 				</p>
-				<img src="../img/Tranquilo.png" width="150" height="250">
-            </div>
-        </div>
+				<br>
+				<br>
+				<br>
+				<img src="../img/Tranquilo.png" width="280px" height="270px">
 
-    </div>
+				<button  onclick="drawfriendsTable()"> Mostrar usuarios</button>
+				<button onclick="location.href='menu.html'">Formulario de pedido</button><br>
 
-	<div class="footer">
-		<img class="pie" src="../img/pildoras.png">
+
+
+
+			</div>
+			
+			
+		</div>
+		
+	</div>	
 	
-	<img class="pie" src="../img/Medicina.png">
-	
-	  <img class="pie" src="../img/Salus.png">
-	
-	  <img class="pie" src="../img/Casa.png" >
-	
-	
-	  <footer id="piedetext"><img class="titulo" src="../img/Marca.png"> Entrega tu confianza, con nosotros encontraras la diferencia</footer>
-	  
+
 	</div>
 	
+	<div class="footer3">
+		<div class="container">
+			<br>
+			<h2>Contactos</h2> <br>
+			
+			<center><table class="table table-hover" id="friendsTable">
+				<thead>
+					<tr class="tr1">
+						<th class="th1">Nombre</th>
+						<th class="th1">Primer Apellido</th>
+						<th class="th1">Segundo Apellido</th>
+						<th class="th1">Telefono</th>
+						<th class="th1">N°Documento</th>
+						<th class="th1">Sangre (Tipo)</th>
+						<th class="th1">Correo electronico</th>
+						<th class="th1">Ubicacion</th>
+						<th class="th1">Mensaje</th>
+						<th class="th1">Selecion</th>
+						
+					</tr>
+				</thead>
+				<tbody>
+	
+				</tbody>
+			</table>
+		</center>
+		</div>
+	
+	  
+	  
+	</div>
+	<footer id="piedetext"><img class="titulo" src="../img/Marca.png"> Entrega tu confianza, con nosotros encontraras la diferencia</footer>
+	
+    <script src="../js/registro.js"></script>
+    <script src="../js/buss.js"></script>   
 
-
-
-
-
-           
+	
+  
 </body>
 </html>

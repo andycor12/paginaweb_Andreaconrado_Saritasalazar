@@ -1,0 +1,35 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+ <div class="login-wrapper">
+       <form class="form" action="#">
+            <img src="../img/loggin1.png"/>
+                  <h2>Iniciar Sesión</h2>
+      
+        <label id="formtext1" for="userName">Usuario</label>  
+
+         <div class="input-group">  
+         <input id="user" autocomplete="off" type="text" placeholder="Nombre de Usuario" value=""/>
+        </div>
+
+        <label id="formtext1" for="userName">Contraseña</label> 
+        
+       <div class="input-group"> 
+        <input id="pass" type="password" placeholder="Contraseña" value=""/>
+        </div>
+       
+                
+        <input  type="submit" id="btnIngresar" value="Entrar" onClick="mostrar();"><br>
+          <a href="../index.html" class="close">&times;</a>
+      
+        </form>
+      </div>
+    <script src="../js/login.js"></script>
+</body>
+</html>

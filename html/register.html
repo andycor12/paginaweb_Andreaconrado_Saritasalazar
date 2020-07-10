@@ -1,0 +1,62 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>registro</title>
+    <link rel="stylesheet" href="../css/style.css">
+    
+</head>
+<body class="menu">
+<div class="login-wrapper">
+      <form  action="" class="form">
+            <img src="../img/loggin.png"/>
+
+
+                    <h2>Registro</h2>
+                
+                      <label id="formtext1" for="userName">Usuario</label>
+                               
+                       <div class="input-group">
+                       <input id="newUser" type="text" placeholder="Ingrese un Usuario" value=""/>
+                      
+                      </div>
+
+                        <label id="formtext1" for="userName">Contraseña</label>
+                         
+
+                       <div class="input-group">  
+                       <input id="newPassword" type="password" placeholder="Ingrese una Contraseña" value=""/>
+                     </div>
+                      
+                         <label id="formtext1" for="userName">Categoria</label><br>
+                        
+                          <select id="category" class="custom-select" onchange="ddlselect();">
+                            <option selected="">Seleccionar Categoria</option>
+                            <option value="Administrador">Administrador</option>
+                            <option value="Invitado">Invitado</option>
+                        </select><br>
+                        
+                        <input type="text" id="txtvalue" hidden />
+                    
+                   <br>
+             
+                   <input  type="submit" id="btnIngresar" value="Entrar"  onClick="store();">
+                     <a href="../index.html" class="close">&times;</a>
+
+               
+        </form>
+   </div>
+
+
+<script src="../js/login.js"></script>
+</body>
+
+
+</html>
+
+
+
+
+
+
+

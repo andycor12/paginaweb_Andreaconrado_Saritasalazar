@@ -1,51 +1,50 @@
-<!DOCTYPE html>
-<html lang="en">
-
-    <head> 
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="icon" type="image/jpg" href="img/logo.jpeg">
-        <link rel="stylesheet" href="../css/estilo.css">
-        <script src="../js/script.js"></script>
-        <title>MENU</title>
-         
-    
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de pedido</title>
+    <link rel="stylesheet" href="../css/style.css">
 </head>
-
-
 <body>
-<form class="form" name="form" action="#" method="POST" onsubmit="return validar();">
-    <h2>FORMULARIO DE OPERACIONES</h2>
-    <p id="formtext"> num1:</p>
-    <input type="text" class="field"  id="valor1"><br>
+     
+     <div class="login-wrapper">
 
-    <p id="formtext">num2:</p>
-    <input type="text"  class="field"  id="valor2"><br>
+	<form name="elige" action="#" id="form">
+            
 
+		<h1 id="formtext1">Formulario de pedido</h1><br>
 
-    <p id="formtext">Resultado:</p> 
-    <input type="text"  class="field"  id="resultado"><br>
+ 
+		<label id="formtext1">	Elige Medicamento: </label><br>
+	     <select name="grupos" class="selct">
+            <option selected="">Seleccionar Medicamento</option>
+            <option value="1">Dolex</option>
+			<option value="2">Nimesulida</option>
+			<option value="3">Aspirina</option>
+			<option value="4">Diclofenaco</option>
+            <option value="5">Paracetamol</option>
+			<option value="6">Penicilamina</option>
+			<option value="7">Omeprazol</option>
+            <option value="8">Atorvastatina</option>
+			<option value="9">Lansoprazol</option>
+			<option value="10">Buscapina fem</option>
+           </select><BR>
+
+        <p>Has elegido el medicamento</p>
+		<h4 id="respuesta"></h4>
+		<p >Numero de medicamento:</p>
+		<h4 id="respuesta3"></h4>
+		<p >Precio total:</p>
+		<h4 id="respuesta2"></h4>
+
+	<input type="button" name="pulsar"  id="btnIngresar" value="Calcular" onclick="escribe()" /><br>
+	
+    <input type="submit" name="submit" id="btnIngresar"value="Limpiar"> 
+    <a href="contactos.html" class="close">&times;</a>
+	  
+</form>
     
-
-
-
-   
-
-     <button onclick="sumar()">Sumar</button>
-     <button onclick="restar()">Restar</button>
-     <a class="boton" href="productos.html" >Regreso</a>
-   </form>
-
-
-
-
-
-
-
-                    
-                
-        
-        </body>
-        
-        </html>
+    <script src="../js/script.js"></script>
+</body>
+</html>
   

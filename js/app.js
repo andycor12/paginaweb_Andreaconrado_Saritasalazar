@@ -14,7 +14,7 @@ function store() {
     localStorage.setItem('newUser', newUser.value);
     localStorage.setItem('newPassword', newPassword.value);
     alert('Dato correctamente guardado');
-    window.location="../index.html";
+   
 }
 
 //mostrar datos
@@ -35,6 +35,6 @@ function mostrar(){
   
     }
  
-    window.location="../html/Registrer.html";
+   
  }
  

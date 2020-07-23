@@ -3,39 +3,117 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Iniciar sesion</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
-</head>
-<body class="carta">
-    <div class=" justify-content-center container col-md-12">
-        <form id="form-login" action="#">
-            <div class="card col-md-6" style="background: transparent;margin-top: 5rem;margin-left: 20rem;">
-                <div class="carta card-header">
-                    <a href="Registrer.html" class="close">&times;</a>
-                    <span style="color:#fff;font-weight: bold;font-size: 30px;">Iniciar sesión</span>
-                </div>
-                <div class="card-body" style="background: rgb(255, 255, 255);">
-                    <div class="form-group">
-                        <span style="color:black;opacity: 0.7;">Usuario</span>
-                        <input class="form-control mb-2" type="text" id="user" placeholder="">
-                        <span style="color:black;opacity: 0.7;">Contraseña</span>
-                        <input type="password" class="form-control mb-2" id="pass" placeholder="">
-                       
-                    </div>
-                </div>
-                <div class="carta card-footer">
-                    <button class="btn btn-block bg-primary text-white" onClick="mostrar();">Aceptar</button>
-                   
-                </div>
-            </div>
-          
-        </form>
-    </div>
+    <title>Menu</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="../css/estilo.css">
     
+</head>
+<body>
+<nav class="navbar navbar-expand-md bg-danger navbar-dark navbar-collapse justify-content-end">
+    <ul class="navbar-nav">
+    <li class="nav-item active">
+     <a href="html/sesion.html" class="nav-link"><img src="icono/usu.png" width="30" class="img-fluid" alt="Responsive image">Iniciar Sesión</a>
+      </li>
+	  <li class="nav-item active">
+     <a href="html/Registrer.html" class="nav-link"><img src="icono/registro.png" width="30" class="img-fluid" alt="Responsive image">Registro</a>
+     </li>
+	  </ul>
+</nav>
+
+<nav class="navbar navbar-expand-md navbar-light bg-light">
+  <a class="col-sm-12 d-flex justify-content-center">
+     <img src="img/logo.png" width="430" height="230" class="img-fluid" alt="Responsive image">
+  </a>
+</nav>
+<nav class="navbar navbar-expand-md bg-danger navbar-dark">
+ 
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="navbar-collapse collapse justify-content-center order-2" id="collapsibleNavbar">
+    <ul class="navbar-nav">
+     <li class="nav-item active">
+        <a class="nav-link" href="index.html"><img src="icono/casita.png" width="30" class="img-fluid" alt="Responsive image">Menu</a>
+      </li>
+       <li class="nav-item active">
+        <a class="nav-link" href="html/Gestion.html"><img src="icono/gestion.png" width="30" class="img-fluid" alt="Responsive image">Gestion Farmaceutica</a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="html/productos.html"><img src="icono/producto.png" width="30" class="img-fluid" alt="Responsive image">Productos</a>
+      </li>
+     <li class="nav-item active">
+        <a class="nav-link" href="html/pedido.html"><img src="icono/pedido.png" width="30" class="img-fluid" alt="Responsive image">Pedidos</a>
+      </li> 
+      <li class="nav-item active">
+        <a class="nav-link" href="html/Catalogo.html"><img src="icono/catalogo.png" width="30" class="img-fluid" alt="Responsive image">Catalogo</a>
+      </li> 
+        <li class="nav-item active">
+        <a class="nav-link" href="html/factura.html"><img src="icono/factura.png" width="25" class="img-fluid" alt="Responsive image">Factura</a>
+      </li>   
+       <li class="nav-item active">
+        <a class="nav-link" href="html/contactos.html"><img src="icono/contacto.png" width="30" class="img-fluid" alt="Responsive image">Contactos</a>
+      </li>  
+      <li class="nav-item active">
+        <a class="nav-link" href="html/chat.html"><img src="icono/avion.png" width="30" class="img-fluid" alt="Responsive image">Chats</a>
+      </li>   
+    </ul>
+  </div>  
+</nav>
+<br>
+
+<div class="jumbotron  bg-light">
+<div class="container">
+
+ <img src="img/menu.jpg" class="img-fluid" alt="Responsive image">
+ <br>
+ <br>
+<p>Bienvenido A Nuestro Nuevo Centro De Ayuda, Para Su Comodidad, Tenemos Nuestra Primera Pagina Web, Diposible Para Nuestros Consumidores Estamos A Su Servicio. Estamos Especializados Para Tartarte De La Mejor Manera Posible. 
+Confia En Nosotros Y Nostros Confiaremos En Ti Plenamente. Unete A Nosotros Con Nuestras Nuevas Campañas.</p>
+<a href="html/Gestion.html" class="btn btn-primary btn-lg">Mas Informacion</a>
+</div>
+</div>
+
+<div class="container">
+<div class="row">
+ <div class="col-6 col-md-6 bg-primary"><br><br>
+    <h3 class="text-light">Equipos De Primeros Auxilios</h3>
+    <img src="img/corazon.png" width="240" class="img-fluid" alt="Responsive image">
+    <p class="text-light" >En FARMACIA CRUZ ROJA DE TEPIC SA DE CV Contamos Con Un Amplio Surtido De
+     Medicamentos Y Productos. Además Ponemos A Tu Disposición Equipo De Primeros Auxilios,
+      RCP, Resucitación Y Botiquines, Entre Otros, Para Tu Empresa O Negocio. 
+      Estamos Suertidos De Lo Que Necesite Tambien Contamos Con La Disponibilidad 
+      Para Hacer Domicilios, Con La Higiene Y La Maxima Precausion Que Esta Entre
+       Nuestras Manos. Ademas Nuestro Personal Te Brindará Atención Personalizada 
+       En Todo Momento Dándote La Información 
+    Completa Acerca Del Medicamento, Producto O Equipo Que Necesites.</p>
+    </div>
+    <div class="col-6 col-md-6 bg-primary"><br>
+      <img src="img/Domicilio.jpg" width="350" class="img-fluid" alt="Responsive image">
+   <p class="text-light">Movimiento, Sociedad Nacional Y Como Seccional Nuestro Objetivo Es Posibilitar Una Vida Sana Y Segura. Esto Lo Hacemos Mediante Acciones Que Se Enmarcan En Las Líneas De Prevención (Reducción), Respuesta (Atención) A Desastres Y Emergencias, Y Recuperación De Comunidades Afectadas Por Causas Naturales O Antrópicas. Desde Nuestra Condición Como Organización Auto Sostenible, 
+     Y Con Un Enfoque Misional, Ofrecemos Servicios En Salud Como:
+     </p>
+     <div class="embed-responsive embed-responsive-16by9">
+  <iframe class="embed-responsive-item" src="https://www.youtube-nocookie.com/embed/JJb4aXZFTFc" frameborder="0" 
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        
+</div>
+     <p class="text-light"> ¡Tranquilo! No te muevas de donde estas, no salgadas de cada, ahora podemos ir donde ti. No te preocupes, contamos con la maxima seguridad, para que tengas bienestar en la comodidad de tu hagar.
+       <a href="html/pedido.html" class="btn btn-light btn-lg"> Ver mas...</a></p>
+    </div>
+</div>
+</div>
+</div>
+<br>
+
+<footer>
+<nav class="navbar navbar-expand-md bg-danger navbar-dark">
+ <div class="col-sm-12 d-flex justify-content-center">
+<p class="text-light"><img src="img/Marca.png" width="20" class="img-fluid" alt="Responsive image">Entrega tu confianza, con nosotros encontraras la diferencia</p>
+ <div>
+ </nav>
+</footer>
 </body>
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-<script src="app.js"></script>
-</html>
+</hmtl>

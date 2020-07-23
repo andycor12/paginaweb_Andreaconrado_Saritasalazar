@@ -1,42 +1,49 @@
-//permitir que su nombre inicie en el id del input
-var newUser = document.getElementById('newUser');
-var newPassword = document.getElementById('newPassword');
+var Username = document.getElementById('username');
+var Password = document.getElementById('password');
 var Category = document.getElementById('txtvalue');
 
 function ddlselect(){
-    //opciones para el selected
     var Category=document.getElementById("category");
     var displaytext=category.options[Category.selectedIndex].text;
-    //muestra en un input
     document.getElementById("txtvalue").value=displaytext;
 }
 
-// Los guardo en localStorage y se almacena y se actualiza
+// Los guardo en localStorage
 function store() {
     localStorage.setItem('Category', category.value);
-    localStorage.setItem('newUser', newUser.value);
-    localStorage.setItem('newPassword', newPassword.value);
-    alert("Dato ingresado correctamente");
+    localStorage.setItem('Username', Username.value);
+    localStorage.setItem('Password', Password.value);
+    alert('Date correct save');
     window.location="../html/sesion.html";
 }
 
 //mostrar datos
- function mostrar(){
-   // Rescato la data del localstorage
-    var newUser1 = localStorage.getItem('newUser');
-    var newPassword1 = localStorage.getItem('newPassword');
-    var Category1 = localStorage.getItem('Category');
-    // Obtengo los datos del login-----value
-    var userName = document.getElementById('user');
-    var userPassword = document.getElementById('pass');
-    // Comparo si el usuario existe y lo muestro en un alert
-     if(userName.value == newUser1 && userPassword.value == newPassword1) {
-         alert('El usuario es : '+newUser1
-                +'\nsu tipo de rol es: '+Category1);
-    }else {
-        alert('Error del Dato');
- 
-   }
 
-   window.location="../html/sesion.html";
+
+    $('#success').click(function(){                       
+        check();
+    });   
+//Validamos el inicio de sesion
+function check() {
+    var Username1 = localStorage.getItem("Username");
+    var Password1 = localStorage.getItem("Password");
+    var Category1 = localStorage.getItem("Category");
+    var Username2 = $('#user').val();
+    var Password2 = $('#pass').val();
+    if(Username2 == Username1 && Password2 == Password1){
+        switch (Category1) {
+            case '1':
+                alert('El usuario : '+Username2
+                +'\nEs administrador@ del Sistema')
+                window.location="../index.html";
+            break;
+            case '2':
+                alert('El usuario : '+Username2
+                +'\nEs Invitad@ del Sistema')
+                window.location="../index.html";
+            break;
+        }
+    }else {
+        alert('Error Data');
+    }
 }

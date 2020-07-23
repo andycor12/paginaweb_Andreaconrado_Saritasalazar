@@ -1,0 +1,6 @@
+.carta {
+    background: #ffffff;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #0f0f0f, #0f0f0f);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, rgb(38, 68, 224), rgb(23, 176, 236)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color:rgb(15, 15, 15);
+}

@@ -22,7 +22,7 @@ function escribe() {
    
    //calculo
     precio=precio*num;
-    alert('precio total es: '+precio+'$');
+    document.getElementById('precio total es: '+precio+'$');
     //respuesta del select y del calculo y la pantalla
     escribir = document.getElementById("respuesta3")
     escribir.innerHTML += num
